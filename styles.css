@@ -1,6 +1,6 @@
 #banner { 
   height:10%;
-  width:100%;
+  width:532px;
   background:white;
   float:;
   text-align:center;
@@ -17,7 +17,7 @@ text-transform: none;
 border: 2px solid #000000; }
 #nav {
    height:5%;
-  width:100%;
+  width:532px%;
   background:white;
   float:;
   text-align:center;
@@ -40,7 +40,7 @@ border: 2px solid #000000;
   float:left;
   text-align:center;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-size: 50px;
+font-size: 20px;
 letter-spacing: 2px;
 word-spacing: 2px;  
 color: #000000;
@@ -58,7 +58,7 @@ border: 2px solid #000000;
   float:left;
   text-align:center;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-size: 50px;
+font-size: 20px;
 letter-spacing: 2px;
 word-spacing: 2px;
 color: #000000;
@@ -73,6 +73,26 @@ position:;
 margin:%;
 }
 #box {
+  height:60%;
+  width:532px;
+  background:white;
+  float:left;
+  text-align:center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 30px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+border: 2px solid #000000;
+float:;
+
+}
+#otherbox 
   height:60%;
   width:549px;
   background:white;
@@ -89,6 +109,4 @@ font-style: normal;
 font-variant: normal;
 text-transform: none;
 border: 2px solid #000000;
-float:;
-  
 }
