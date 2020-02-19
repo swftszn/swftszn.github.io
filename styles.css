@@ -1,6 +1,6 @@
 #banner { 
   height:10%;
-  width:532px;
+  width:100%;
   background:white;
   float:;
   text-align:center;
@@ -17,7 +17,7 @@ text-transform: none;
 border: 2px solid #000000; }
 #nav {
    height:5%;
-  width:532px%;
+  width:100%;
   background:white;
   float:;
   text-align:center;
