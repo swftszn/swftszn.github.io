@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <link rel="stylesheet" href="styles.css">
 
-<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+   <style>
+   body {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_UY1200_CR105,0,630,1200_AL_.jpg");
+    }
+   </style>
+   <body>
+   
+     
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="watch.html">Watch</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       <li><a href="about.html">About</a></li>
+     </ul>
+    
+     <h1>Watch Now</h1>
+     <h4>Watch Anime Live: For Free<br>Streaming Now - JoJo's Bizzare Adventures, My Hero Academia and Boruto: Naruto Next Generations</h4>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="sidenav">
-  <a href="#">Downloads</a>
-  <a href="#">Plugins</a>
-  <a href="#">Contact</a>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2020/03/stardust-banner.jpg" style="width:100%">
+  <div class="text">JoJo's Bizzare Adventures: Stardust Crusaders</div>
 </div>
 
-<div class="content">
-  <h2>Editing Tutorial</h2>
-  <p>Website that teaches you the basics to video editing</p>
-  <p2>The best video editing programs are "Sony Vegas Pro" or "Adobe After effects"</p2>
-  <iframe class="iframe" width="300" height="200" src="https://www.youtube.com/embed/6tR3fpv4Aco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2019/08/Boruto-Naruto-Uzumaki.jpg" style="width:100%">
+  <div class="text">Boruto: Naruto Next Generations</div>
 </div>
 
-<div class="content2">
-  <p3>Adobe After Effects is a digital visual effects, 
-  motion graphics, and compositing application 
-  developed by Adobe Systems and used in the post-production 
-  process of film making, video games and television production. 
-  Among other things, After Effects can be used for keying,
-  tracking, compositing, and animation. It also functions 
-  as a very basic non-linear editor, audio editor, and media 
-  transcoder. In 2019, the program won an Academy Award for 
-  scientific and technical achievement.</p3>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/02/My-Hero-Academia-Anime-Cropped.jpg" style="width:100%">
+  <div class="text">Boku No Hero Academia</div>
+</div>
 
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+</div>
+<br>
 
-</body>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+     
+     
+     
+     
+     
+   </body>
+   
+      
 </html>
+
